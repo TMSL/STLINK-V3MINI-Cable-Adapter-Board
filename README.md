@@ -1,7 +1,7 @@
 # STLINK-V3MINI-Cable-Adapter-Board
 PCB files for an STLINK-V3MINI Adapter / breakout board that provides 0.100" (2.54mm) connections from the STMicrolectronics defined "STDC14" (7x2 0.050") connector cable. The adapter has been designed to support 1x12 headers to allow it to be plugged into a solderless breadboard or connected to the target using separate leads.
 
-This adapter / breakout board was created to make it easier use the STDC14 cable that is provided with the MINI with boards that have 0.100" pin connections. It supports:
+This adapter / breakout board was created to make it easier use the STDC14 cable that is provided with the MINI with boards that have 0.100" pin connections. It supports the following STLINK-V3MINI features:
 * Device FLASH programming
 * Serial Wire Debugging (SWD)
 * A Virtual Comm Port (VCP) over USB
