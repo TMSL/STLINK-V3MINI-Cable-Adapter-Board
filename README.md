@@ -1,5 +1,5 @@
 # STLINK-V3MINI-Cable-Adapter-Board
-PCB files for an STLINK-V3MINI Adapter / breakout board that provides 0.100" (2.54mm) connections from the STMicrolectronics defined "STDC14" (7x2 0.050") connector cable.
+PCB files for an STLINK-V3MINI Adapter / breakout board that provides 0.100" (2.54mm) connections from the STMicrolectronics defined "STDC14" (7x2 0.050") connector cable. The adapter has been designed to support 1x12 headers to allow it to be plugged into a solderless breadboard or connected to the target using separate leads.
 
 This adapter / breakout board was created to make it easier use the STDC14 cable that is provided with the MINI with boards that have 0.100" pin connections. It supports:
 * Device FLASH programming
@@ -11,6 +11,8 @@ This adapter / breakout board was created to make it easier use the STDC14 cable
 <p align="left">
   <img src="/Adapter3DImage.png?raw=true" width="350" alt="board image" title="STLINK-V3MINI Adapter">
 </p>
+
+Two 1x12 single row header positions are provided for connecting to the target board. The signals on both are identical. One or both may be populated as desired. For example, one header connector may be soldered on the top of the board to enable connecting to the target board with patch wires while another header connector may be simultaneously soldered on the bottom to facilitate plugging the adapter into a solderless breadboard. Dual-row headers or sockets may also be used, or cable wires directly soldered to the board, and so on... Your choice.
 
 ## Background
 The STLINK-V3MINI is a very small and low cost FLASH programmer and in-circuit debug board for STM8 and STM32 microcontrollers that includes Serial Wire Viewer (SWV) and Virtual Comm Port (VCP) support, among other additional features. However, the STLINK-V3MINI STDC14 connector is an unusual size. The 0.050 (1.27mm) pitch and is not easily used with STM32 "maker" boards such as the Blue Pill, Black Pill, Maple Mini, and other boards that typically use 0.100" pin headers, it also doesn't match match the 10-pin cable standard defined for ARM JTAG.
