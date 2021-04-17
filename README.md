@@ -18,8 +18,13 @@ Two 1x12 single row header positions are provided for connecting to the target b
 The STLINK-V3MINI is a very small and low cost FLASH programmer and in-circuit debug board for STM8 and STM32 microcontrollers that includes Serial Wire Viewer (SWV) and Virtual Comm Port (VCP) support, among other additional features. However, the STLINK-V3MINI STDC14 connector is an unusual size. The 0.050 (1.27mm) pitch and is not easily used with STM32 "maker" boards such as the Blue Pill, Black Pill, Maple Mini, and other boards that typically use 0.100" pin headers, it also doesn't match match the 10-pin cable standard defined for ARM JTAG.
 
 ## What's good about the STLINK-V3 MINI
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/27512953/115096574-9f716500-9eda-11eb-98d0-d14632c64c95.jpg" width="350" alt="board image" title="STLINK-V3MINI Adapter">
+</p>
+<!-- ![STLINK-V3MINI](https://user-images.githubusercontent.com/27512953/115096574-9f716500-9eda-11eb-98d0-d14632c64c95.jpg) -->
+
 * low cost compared to official STMicroelectronics STLINK-V2 and STLINK-V3SET products
-* very small (maybe too small?)
+* Very small (maybe too small?) Just 15mm x 30mm
 * Delivered with 1.27 mm pitch STDC14 to STDC14 flat cable
 * LEDs for communication and power
 * Includes STDC14 signals protection
