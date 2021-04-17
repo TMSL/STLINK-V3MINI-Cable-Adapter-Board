@@ -44,17 +44,21 @@ The board provides a number of features that put it a level up from the STLINK-V
   * Note: those additional features and connections are not provided on the adapter board. You'd need to connect directly to the castellated pads on the module 
 
 ## What's not so good about the STLINK-V3MINI :-1:
-The board appears to have been designed first as a module (The STLINK-V3MODS) that was intended to be soldered onto the target or some other intermediate board taking the least amount of space possible while providing access to all of the MINI's features. The STDC14 connector fits into the overall design almost as an afterthought.
+The board appears to have been designed first as a module (The STLINK-V3MODS) with castellated 0.050" pitch holes that was intended to be soldered onto the target or some other intermediate board taking the least amount of space possible while providing access to all of the MINI's features. The STDC14 connector that makes the board into an STLINK-V3MINI instead of an STLINK-V3MODS fits into the overall design almost as an afterthought. The module itself is solidly built and does not need to be handled very delicately. The mechanical weak points are first in the STDC14 connector and secondly in the ribbon cable used to connect to the target board.
+
 * The Size
-** The STDC14 connector allows the STLINK-V3MINI to be used as a separate test board for its most used features, but a separate debug board having the smallest size is not a benefit compared to ease of connectivity.
-* The STDC14 Connector
-** While the STDC14 pins include the 10-pin ARM JTAG signals as a subset, unfortunately you cannot directly plug a 0.050" (1.27mm) 10-pin IDC ribbon cable directly into the MINI because of mechanical interference. (The design intent was better than the implementation).
-** The 2x7 0.50" sockets and headers are much harder for hobbyists to find in small quantities online than the 2x5 versions. If you're designing a new board it may be best to avoid directly supporting STM's STDC14 connector and stick with more standard and commonly available connectors.
-** The components for making the IDC ribbon cables are also harder to find, along with the ribbon cable material itself. Be gentle with the cable because if you bust it, getting a replacement will probably cost more than buying another board.
+  * The STDC14 connector allows the STLINK-V3MINI to be used as a separate test board for its most used features, but a separate debug board having the smallest size is not a benefit compared to ease of connectivity.
+* No USB 5V passthrough
+  * The STDC14 connector allows VCC to be provided as an INPUT to the board, but most use with small STM32 boards would be for it to be able to pass USB 5V TO the target board. Consequently, the target board needs to be powered through a separate connection.
+* The Proprietary STDC14 Connector Design
+  * While the STDC14 pins include the 10-pin ARM JTAG signals as a subset, unfortunately you cannot directly plug a 0.050" (1.27mm) 10-pin IDC ribbon cable directly into the MINI because of mechanical interference. (The design intent was better than the implementation).
+* Connector and Cable Availability
+  * The 2x7 0.50" sockets and headers are much harder for hobbyists to find in small quantities online than the 2x5 versions. If you're designing a new board it may be best to avoid directly supporting STM's STDC14 connector and stick with more standard and commonly available connectors.
+  * The components for making the IDC ribbon cables are also harder to find, along with the ribbon cable material itself. Be gentle with the cable because if you bust it, getting a replacement may cost more than buying another board.
 * No mounting holes
-** Not a huge issue if it's hanging off the end of a USB cable using the 14-conductor flat ribbon cable
-** Impedes using it from being installed on the target as a mezzanine card using the STDC14 connector, except temporarily - in which case you might as well use the cable.
-** The module itself is solidly built and does not need to be handled very delicately. The mechanical weak points are in the STDC14 connector and the ribbon cable used to connect to the target board.
+  * Impedes using it from being installed on the target as a mezzanine card using the STDC14 connector, except temporarily (in which case you might as well use it with the ribbon cable).
+  * Harder to use in a case. The lack of mounting holes along with the fact that the USB connector doesn't
+  * The lack of mounting holes is less of an issue if the STLINK-V3MINI is hanging off the end of a USB cable and using the 14-conductor flat ribbon cable. A bit risky if it's directly attached to a board via the STDC14 connector since bumping the module or pulling the USB cable would put all the force onto the STDC14 connector.
 
 # Making Your Own Copy of the Adapter Board
 The .ZIP file contains all the Gerber and Drill files needed to upload the design to a PCB fabrication service, such as JLCPCB. You should only need download the file from here and upload it to the service. It's a simple TWO LAYER board and should not require any special specifications or changes from the service's default configurations for two layer board manufacturing other than verifying that the DIMENSIONS ARE IN MM and selecting other options you may wish, such as board color or whether lead or lead-free solder tinning finish is used.
