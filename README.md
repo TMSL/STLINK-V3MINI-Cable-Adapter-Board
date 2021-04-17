@@ -11,11 +11,10 @@ This adapter / breakout board was created to make it easier use the STDC14 cable
 <p align="left">
   <img src="/Adapter3DImage.png?raw=true" width="350" alt="board image" title="STLINK-V3MINI Adapter">
 </p>
-
 Two 1x12 single row header positions are provided for connecting to the target board. The signals on both are identical. One or both may be populated as desired. For example, one header connector may be soldered on the top of the board to enable connecting to the target board with patch wires while another header connector may be simultaneously soldered on the bottom to facilitate plugging the adapter into a solderless breadboard. Dual-row headers or sockets may also be used, or cable wires directly soldered to the board, and so on... Your choice.
 
 ## Background
-The STLINK-V3MINI is a very small and low cost FLASH programmer and in-circuit debug board for STM8 and STM32 microcontrollers that includes Serial Wire Viewer (SWV) and Virtual Comm Port (VCP) support, among other additional features. However, the STLINK-V3MINI STDC14 connector is an unusual size. The 0.050 (1.27mm) pitch and is not easily used with STM32 "maker" boards such as the Blue Pill, Black Pill, Maple Mini, and other boards that typically use 0.100" pin headers, it also doesn't match match the 10-pin cable standard defined for ARM JTAG.
+The STLINK-V3MINI is a very small and low cost FLASH programmer and in-circuit debug board for STM8 and STM32 microcontrollers that includes Serial Wire Viewer (SWV) and Virtual Comm Port (VCP) support, among other additional features. However, the STLINK-V3MINI STDC14 connector is an unusual size. The 0.050 (1.27mm) pitch STDC14 connector is not easily used with STM32 "maker" boards such as the Blue Pill, Black Pill, Maple Mini, and other boards that typically use 0.100" pin headers. It also doesn't match match the 10-pin cable standard defined for ARM JTAG. You can buy the STLINK-V3MINI with an adapter board and additional cables from WaveShare, at an increased overall cost for those extras. I had already purchased the stock STLINK-V3MINI, which only comes with a ribbon cable, and only needed an adapter. An internet search did not come up with any off-the-shelf STDC14 adapters so I decided to make my own that would be usable with my Black Pill and Blue Pill boards and that I could also plug into a solderless breadboard for prototyping.
 
 ## What's good about the STLINK-V3MINI :+1:
 The board provides a number of features that put it a level up from the STLINK-V2.1 and two steps above the cheap STLINK-V2 clones.
