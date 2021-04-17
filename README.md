@@ -42,7 +42,7 @@ The STLINK-V3MINI is a very small and low cost FLASH programmer and in-circuit d
   * 3 V to 3.6 V application voltage support on the UART interface and 5 V tolerant inputs
   * VCP frequency up to 15 MHz
 
-* Provides interesting options for "bridging" I2C, GPIO, USART, and CAN between host USB and the board under test
+* Provides interesting options for "bridging" I2C, GPIO, USART, SPI, and CAN between host USB and the board under test
   * Note: those additional features and connections are not provided on the adapter board. You'd need to connect directly to the castellated pads on the module 
 
 ## Additional Commentary
