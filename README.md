@@ -18,9 +18,13 @@ The STLINK-V3MINI is a very small and low cost FLASH programmer and in-circuit d
 
 ## What's good about the STLINK-V3MINI :+1:
 The board provides a number of features that put it a level up from the STLINK-V2.1 and two steps above the cheap STLINK-V2 clones.
-<p align="left">
-  <img src="https://user-images.githubusercontent.com/27512953/115096574-9f716500-9eda-11eb-98d0-d14632c64c95.jpg" width="350" alt="board image" title="STLINK-V3MINI Adapter">
-</p>
+
+<div>
+  <b>STLINK-V3MINI:</b>
+  <p align="left">
+  <img src="https://user-images.githubusercontent.com/27512953/115124197-e3fe0e80-9f75-11eb-8c7e-eeceef73333e.jpg" width="350" alt="board image" title="STLINK-V3MINI Adapter">
+  </p>
+</div>
 
 * Low Cost compared to official STMicroelectronics STLINK-V2 and STLINK-V3SET products
 * Very small (maybe too small?) Just 15mm x 30mm
